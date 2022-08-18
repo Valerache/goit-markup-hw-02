@@ -2,18 +2,48 @@
     /* Fonts */
 
     /* Text colors */
-    --main-cl: #212121;
-    --scn-cl: #757575;
+    --main-txt-cl: #212121;
+    --scn-txt-cl: #757575;
+    --third-txt-cl: #FFFFFF;
+    
     /* Background colors */
+    --main-bg-cl: #2F303A;
 
     /* Others */
     
 }
 
 body {
-    color: var(--main-cl);
+    color: var(--main-txt-cl);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    
 }
 
-p {
-    color: var(--scn-cl);
+.pecul-subtitle,
+.team-subtitle,
+.img-subtitle
+ {
+    color: var(--scn-txt-cl);
+}
+
+/* Как вариант */
+/* p {
+   color: var(--scn-txt-cl); 
+} */
+
+.hero,
+.footer {
+    background-color: var(--main-bg-cl);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main-txt-cl);
+}
+
+.addr-link,
+.hero-title {
+    color: var(--third-txt-cl);
 }
