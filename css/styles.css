@@ -1,0 +1,19 @@
+:root {
+    /* Fonts */
+
+    /* Text colors */
+    --main-cl: #212121;
+    --scn-cl: #757575;
+    /* Background colors */
+
+    /* Others */
+    
+}
+
+body {
+    color: var(--main-cl);
+}
+
+p {
+    color: var(--scn-cl);
+}
