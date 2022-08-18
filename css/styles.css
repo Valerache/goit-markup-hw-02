@@ -1,31 +1,34 @@
 :root {
-    /* Fonts */
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --scn-font: 'Raleway', sans-serif;
 
-    /* Text colors */
-    --main-txt-cl: #212121;
-    --scn-txt-cl: #757575;
-    --third-txt-cl: #FFFFFF;
-    
-    /* Background colors */
-    --main-bg-cl: #2F303A;
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --scn-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --accent-cl: #2196f3;
 
-    /* Others */
-    
+  /* Background colors */
+  --main-bg-cl: #2f303a;
+  --light-bg-cl: #f5f5f5;
+
+  /* Others */
 }
 
 body {
-    color: var(--main-txt-cl);
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  background-color: var(--light-bg-cl);
 }
 
 .pecul-subtitle,
 .team-subtitle,
-.img-subtitle
- {
-    color: var(--scn-txt-cl);
+.img-subtitle {
+  color: var(--scn-txt-cl);
 }
 
 /* Как вариант */
@@ -35,15 +38,155 @@ body {
 
 .hero,
 .footer {
-    background-color: var(--main-bg-cl);
+  background-color: var(--main-bg-cl);
 }
 
 .link {
-    text-decoration: none;
-    color: var(--main-txt-cl);
+  text-decoration: none;
+  color: var(--main-txt-cl);
 }
 
 .addr-link,
 .hero-title {
-    color: var(--third-txt-cl);
+  color: var(--light-txt-cl);
+}
+
+.prtf-btn,
+.hero-btn {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+
+.header {
+  background-color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.cnt-link:hover,
+.cnt-link:focus {
+  color: var(--accent-cl);
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+}
+
+.cnt-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  color: var(--scn-txt-cl);
+}
+
+/* Hero */
+
+.hero-btn {
+  background-color: var(--accent-cl);
+  color: var(--light-txt-cl);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Peculiarities */
+
+.pecul-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+/* About */
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+/* Team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-img,
+.img-link {
+  background-color: #ffffff;
+}
+
+.team-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-subtitle {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+/* Portfolio */
+
+.prtf-btn {
+  background-color: #f5f4fa;
+}
+
+.prtf-btn:hover {
+  background-color: var(--accent-cl);
+  color: var(--light-txt-cl);
+}
+
+.img-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.img-subtitle {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+ 
+/* Footer */
+
+.addr-link {   
+font-style: normal;
+}
+
+.tm {
+    color: rgba(255, 255, 255, 0.6);
 }
