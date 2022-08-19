@@ -63,7 +63,13 @@ body {
 /* Header */
 
 .logo {
-  font-family: 'Raleway';
+  
+  /* font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26); */
+
+  font-family: var(--scn-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
